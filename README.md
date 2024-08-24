@@ -1,4 +1,4 @@
-------BASE DE DATOS DEL PROYECTO DE TICKETS ------------
+--Base de datos del proyecto--
 
 create table tbtUsuarios (
 UUID_Usuario VARCHAR2(100) primary key, 
