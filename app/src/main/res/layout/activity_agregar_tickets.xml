@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/estilo_campos"
+    tools:context=".activity_agregar_tickets">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adlam_display"
+        android:text="Agregar Ticket"
+        android:textColor="#E22113"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <Spinner
+        android:id="@+id/spEstado"
+        android:layout_width="152dp"
+        android:layout_height="49dp"
+        android:background="@drawable/estilo_campos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.599" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="344dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/estilo_campos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14">
+
+        <EditText
+            android:id="@+id/txtTituloCard"
+            android:layout_width="315dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="7dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Título"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="344dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/estilo_campos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231">
+
+        <EditText
+            android:id="@+id/txtDescripcion"
+            android:layout_width="315dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="6dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Descripción"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="344dp"
+        android:layout_height="43dp"
+        android:background="@drawable/estilo_campos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.318">
+
+        <EditText
+            android:id="@+id/txtResponsable"
+            android:layout_width="315dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="21dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Responsable"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout8"
+        android:layout_width="161dp"
+        android:layout_height="47dp"
+        android:background="@drawable/estilo_campos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6">
+
+        <EditText
+            android:id="@+id/txtTelefonoAutor"
+            android:layout_width="133dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Teléfono autor"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="344dp"
+        android:layout_height="43dp"
+        android:background="@drawable/estilo_campos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/txtUbicacion"
+            android:layout_width="315dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Ubicacion"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="344dp"
+        android:layout_height="43dp"
+        android:background="@drawable/estilo_campos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411">
+
+        <EditText
+            android:id="@+id/txtEmailAutor"
+            android:layout_width="315dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Email del autor"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnAgregarTicket"
+        android:layout_width="180dp"
+        android:layout_height="69dp"
+        android:backgroundTint="#E22113"
+        android:text="Agregar ticket"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.722" />
+
+    <Button
+        android:id="@+id/btnVerTickets"
+        android:layout_width="211dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#E22113"
+        android:text="Ver tickets registrados"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="58dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="Estado"
+        android:textColor="#E22113"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/spEstado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

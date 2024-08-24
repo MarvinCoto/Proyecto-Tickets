@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_tickets_info">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="#E22113"
+        android:fontFamily="@font/adlam_display"
+        android:text="Información del ticket"
+        android:textColor="#E22113"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.625" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout9"
+        android:layout_width="361dp"
+        android:layout_height="335dp"
+        android:layout_marginBottom="248dp"
+        android:background="@drawable/estilo_campos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/txtTituloTicket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/adlam_display"
+            android:text="TextView"
+            android:textColor="#E22113"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtDescripcionTicket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.571" />
+
+        <TextView
+            android:id="@+id/txtDescripcionTicket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Responsable"
+            android:textColor="#E22113"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtResponsableTicket"
+            app:layout_constraintEnd_toStartOf="@+id/textView14"
+            app:layout_constraintHorizontal_bias="0.276"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Email autor"
+            android:textColor="#E22113"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtEmailTicket"
+            app:layout_constraintEnd_toStartOf="@+id/textView15"
+            app:layout_constraintHorizontal_bias="0.259"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="56dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Teléfono"
+            android:textColor="#E22113"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtTelefonoTicket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescripcionTicket"
+            app:layout_constraintVertical_bias="0.875" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Estado"
+            android:textColor="#E22113"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtEstadoTicket"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Ubicación"
+            android:textColor="#E22113"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtUbicacionTicket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtUbicacionTicket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/txtIDticket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtResponsableTicket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/textView13"
+            app:layout_constraintEnd_toStartOf="@+id/txtTelefonoTicket"
+            app:layout_constraintHorizontal_bias="0.318"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtTelefonoTicket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="56dp"
+            android:layout_marginBottom="20dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/textView15"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/txtEmailTicket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/textView16"
+            app:layout_constraintEnd_toStartOf="@+id/txtEstadoTicket"
+            app:layout_constraintHorizontal_bias="0.268"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtEstadoTicket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="56dp"
+            android:layout_marginBottom="16dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/textView16"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="ID:"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txtIDticket"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtIDticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
+            android:text="TextView"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/icRegresar"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_regresar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

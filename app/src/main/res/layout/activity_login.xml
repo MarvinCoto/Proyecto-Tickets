@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/estilo_campos"
+    tools:context=".activity_login">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="Inicio de sesión"
+        android:textColor="#E22113"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="344dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/estilo_campos"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/txtCorreoLogin"
+            android:layout_width="315dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="6dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="344dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/estilo_campos"
+        app:layout_constraintBottom_toTopOf="@+id/btnIniciarSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/txtContrasenaLogin"
+            android:layout_width="315dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="6dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="text|textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="171dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#E22113"
+        android:text="Iniciar sesion"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="O registrate"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnIrAIRegistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnIrAIRegistro"
+        android:layout_width="140dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="236dp"
+        android:backgroundTint="#E22113"
+        android:text="Registrarse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
